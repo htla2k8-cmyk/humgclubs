@@ -1,0 +1,126 @@
+/* ========================================================
+   RESPONSIVE DESIGN SYSTEM - MOBILE & TABLET ADAPTATIONS
+   ======================================================== */
+
+@media (max-width: 1100px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --sidebar-width: 250px;
+  }
+
+  .main-wrapper {
+    margin-left: 0;
+  }
+
+  .app-sidebar {
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .app-sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .humg-hero-title {
+    font-size: 1.45rem;
+  }
+
+  .humg-hero-desc {
+    font-size: 0.88rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-box {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .content-container {
+    padding: 16px;
+  }
+
+  .app-header {
+    padding: 0 16px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clubs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .humg-hero-card {
+    min-height: 280px;
+  }
+
+  .humg-hero-overlay {
+    padding: 20px;
+  }
+
+  .semester-tag span.hide-on-mobile {
+    display: none;
+  }
+
+  .certificate-preview-box {
+    padding: 18px;
+    border-width: 6px;
+  }
+
+  .certificate-signatures {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .cert-sig-title {
+    margin-bottom: 25px;
+  }
+}
+
+/* Print Stylesheet for Certificate */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .app-sidebar,
+  .app-header,
+  .filter-bar,
+  .btn,
+  .toast-container,
+  .modal-backdrop,
+  .humg-hero-card {
+    display: none !important;
+  }
+
+  .main-wrapper {
+    margin-left: 0 !important;
+  }
+
+  .certificate-preview-box {
+    border: 10px double #b45309 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}

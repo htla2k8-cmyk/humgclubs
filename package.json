@@ -1,0 +1,13 @@
+{
+  "name": "humg-student-clubs-manager",
+  "version": "1.0.0",
+  "description": "Hệ thống Quản lý Các Đội, Nhóm, Câu lạc bộ Sinh viên Trường Đại học Mỏ - Địa chất (HUMG)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["humg", "clubs", "student-management", "nckh", "vanilla-js"],
+  "author": "Đoàn Thanh niên - Hội Sinh viên HUMG",
+  "license": "MIT"
+}
